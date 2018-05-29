@@ -527,6 +527,7 @@ class JSSImporter(Processor):
         if groups:
             for group in groups:
                 if self.validate_input_var(group):
+                	time.sleep(30)
                     is_smart = group.get("smart", False)
                     if is_smart:
                         computer_group = self.add_or_update_smart_group(group)
